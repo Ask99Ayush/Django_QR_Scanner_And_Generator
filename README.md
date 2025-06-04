@@ -1,0 +1,1 @@
+# Django_QR_Scanner_And_Generator
