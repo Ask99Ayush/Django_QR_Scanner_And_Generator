@@ -1,0 +1,19 @@
+{% extends "core/base.html" %}
+{% block title %}Scan QR{% endblock title %}
+
+{% block content %}
+<div class="center-container">
+    <div class="container">
+        <h1>Scan QR Code</h1>
+        <form action="{% url 'scan_qr' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="qr_image" accept="image/*" id="qr-input" required>
+            <button type="submit">Scan</button>
+        </form>
+        {% if result %}
+            <h2>Scan Result: {{ result }}</h2>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}
+
