@@ -8,6 +8,7 @@ Django QR Code Generator & Scanner
  3. Install dependencies from requirements.txt.
  4. Run migrations and start the Django development server.
  5. Open the generate and scan pages in your browser.
+
  Author: Ayush Rao Chaudhary
  GitHub: https://github.com/Ask99Ayush
  LinkedIn: https://www.linkedin.com/in/Ask99Ayush
